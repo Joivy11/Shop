@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Link } from 'react-router-dom';
+import Search from '@mui/icons-material/Search';
+import ShoppingCartOutlined from '@mui/icons-material/ShoppingCartOutlined';
+import { Badge } from '@mui/material';
 
 const Container = styled.div`
     width:100%;
@@ -52,6 +54,10 @@ const Center = styled.div`
     font-weight:bold;
 `;
 
+const Logo = styled.h2`
+    font-weight:bold;
+`;
+
 const Right = styled.div`
     flex:1;
     display:flex;
@@ -59,10 +65,18 @@ const Right = styled.div`
     align-items:center;
 `;
 
-const LinkItem = styled(Link)`
-    color:black;
-    text-decoration:none;
+const MenuItem = styled.div`
+    margin-left:10px;
+    display:flex;
+    align-items: center;
+    padding:8px;
+    border-radius:40px;
+    transition:.2s all;
+    &:hover{
+        background-color: #eee;
+    }
 `;
+
 
 const Navbar = () => {
     return (
@@ -72,14 +86,21 @@ const Navbar = () => {
                     <Language>EN</Language>
                     <SearchContainer>
                         <Input />
+                        <Search style={{color:"gray", fontSize:"16px"}}/>
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <LinkItem>
-                        JOIVY.
-                    </LinkItem>
+                    <Logo>JOIVY.</Logo>
                 </Center>
-                <Right>...</Right>
+                <Right>
+                    <MenuItem>REGISTER</MenuItem>
+                    <MenuItem>SIGN IN</MenuItem>
+                    <MenuItem>
+                        <Badge badgeContent={99} color="primary">
+                            <ShoppingCartOutlined />
+                        </Badge>
+                    </MenuItem>
+                </Right>
             </Wrapper>
         </Container>
     )

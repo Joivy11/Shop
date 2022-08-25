@@ -7,22 +7,22 @@ export const sliderItems = [
         bg: "f5fafd",
         
     },
-    // {
-    //     id: 2,
-    //     img: "https://i.ibb.co/DG69bQ4/2.png",
-    //     title: "AUTUMN COLLECTION",
-    //     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    //     bg: "fcf1ed",
+    {
+        id: 2,
+        img: "https://i.ibb.co/cXFnLLV/3.png",
+        title: "AUTUMN COLLECTION",
+        desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+        bg: "fcf1ed",
        
-    // },
-    // {
-    //     id: 3,
-    //     img: "https://i.ibb.co/cXFnLLV/3.png",
-    //     title: "LOUNGEWEAR LOVE",
-    //     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    //     bg: "fbf0f4",
-    //     categoryName : "shirt",
-    // },
+    },
+    {
+        id: 3,
+        img: "https://i.ibb.co/cXFnLLV/3.png",
+        title: "LOUNGEWEAR LOVE",
+        desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+        bg: "fbf0f4",
+        categoryName : "shirt",
+    },
 ];
 
 export const categories = [
@@ -58,7 +58,7 @@ export const popularProducts = [
     },
     {
         id: 2,
-        img: "https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+        img: "https://cdn.pixabay.com/photo/2016/11/23/06/57/isolated-t-shirt-1852114__340.png",
         name : "ANGELA NATURAL TEE",
         color: "blue",
         size: "XL",
@@ -103,7 +103,7 @@ export const popularProducts = [
     },
     {
         id: 7,
-        img: "https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+        img: "https://cdn.pixabay.com/photo/2017/09/03/14/41/mock-up-2710535__340.jpg",
         name : "NOISSUE X CREATESY TOTE BAG",
         color: "brown",
         size: "20",
@@ -121,7 +121,7 @@ export const popularProducts = [
     },
     {
         id: 9,
-        img: "https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+        img: "https://cdn.pixabay.com/photo/2016/11/23/06/57/isolated-t-shirt-1852113__340.png",
         name : "WOMEN JACKET",
         color: "brown",
         size: "20",
@@ -130,8 +130,8 @@ export const popularProducts = [
     },
     {
         id: 10,
-        img: "https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
-        name : "WOMEN JACKET",
+        img: "https://cdn.pixabay.com/photo/2019/02/13/19/23/t-shirt-3995093__340.png",
+        name : "MEN'S SWEATERS",
         color: "brown",
         size: "20",
         count : 1,
@@ -139,7 +139,43 @@ export const popularProducts = [
     },
     {
         id: 11,
-        img: "https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+        img: "https://cdn.pixabay.com/photo/2014/04/03/10/55/t-shirt-311732__340.png",
+        name : "WOMEN JACKET",
+        color: "brown",
+        size: "20",
+        count : 1,
+        price : 70,
+    },
+    {
+        id: 12,
+        img: "https://cdn.pixabay.com/photo/2013/07/13/14/08/apparel-162192__340.png",
+        name : "WOMEN JACKET",
+        color: "brown",
+        size: "20",
+        count : 1,
+        price : 70,
+    },
+    {
+        id: 13,
+        img: "https://media.istockphoto.com/photos/black-leather-pants-picture-id515139983?b=1&k=20&m=515139983&s=170667a&w=0&h=aa81f8-GrsO4lh2r6xDQk0cj3mUhw0TetBNI0WCvq2s=",
+        name : "MEN'S JEANS ",
+        color: "brown",
+        size: "20",
+        count : 1,
+        price : 70,
+    },
+    {
+        id: 14,
+        img: "https://cdn.pixabay.com/photo/2013/07/13/14/07/apparel-162180__340.png",
+        name : "WOMEN JACKET",
+        color: "brown",
+        size: "20",
+        count : 1,
+        price : 70,
+    },
+    {
+        id: 15,
+        img: "https://cdn.pixabay.com/photo/2017/06/12/08/07/male-2394718__340.jpg",
         name : "WOMEN JACKET",
         color: "brown",
         size: "20",

@@ -14,7 +14,7 @@ const Title = styled.p`
     color:white;
 `;
 
-function Announcement() {
+const Announcement = () => {
     return (
         <Container>
             <Title>

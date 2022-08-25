@@ -5,18 +5,19 @@ import CategotyItem from './CategotyItem';
 
 
 const Container = styled.div`
-    width:100%;
-    position: relative;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
 `;
 
 const Categories = () => {
     return (
         <Container>
             {categories.map(item => (
-                <CategotyItem item={item}/>
+                <CategotyItem item={item} key={item.id}/>
             ))}
         </Container>
     )
 }
 
-export default Categories
+export default Categories;
