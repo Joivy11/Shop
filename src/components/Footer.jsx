@@ -21,7 +21,10 @@ const Left = styled.div`
     padding: 20px;
 `;
 
-const Logo = styled.h1``;
+const Logo = styled.h1`
+    font-size:35px;
+    font-weight: 700;
+`;
 
 const Desc = styled.p`
     margin: 10px 0px;
