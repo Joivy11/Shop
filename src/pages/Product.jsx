@@ -131,7 +131,7 @@ const Product = () => {
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate 
                         reprehenderit magni, suscipit culpa porro quos odit soluta praesentium 
                         voluptate quas aliquid. Quia odio expedita, illo facilis aspernatur 
-                        consectetur nobis veritatis laboriosam cumque, quae voluptate ea. 
+                        consectetur nobis veritatis laboriosam cumque, quae voluptate. 
                     </Desc>
                     <Price>$ 20</Price>
                     <FilterContainer>
