@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import Search from '@mui/icons-material/Search';
 import ShoppingCartOutlined from '@mui/icons-material/ShoppingCartOutlined';
 import { Badge } from '@mui/material';
 
 const Container = styled.div`
-    width:100%;
     height:60px;
-    box-sizing:border-box;
+    @media only screen and (max-width: 380px){
+        height: 50px;
+    }
 `;
 
 const Wrapper = styled.div`
@@ -19,6 +19,9 @@ const Wrapper = styled.div`
     display:flex;
     align-content:center;
     justify-content:space-between;
+    @media only screen and (max-width: 380px){
+        padding: 10px 0px;
+    }
 `;
 
 const Left = styled.div`
@@ -30,6 +33,9 @@ const Left = styled.div`
 const Language = styled.span`
     font-size: 14px;
     cursor:pointer ;
+    @media only screen and (max-width: 380px){
+        display: none;
+    }
 `;
 
 const SearchContainer = styled.div`
@@ -43,6 +49,9 @@ const SearchContainer = styled.div`
 const Input = styled.input`
     border:none;
     outline:none;
+    @media only screen and (max-width: 380px){
+        width: 50px;
+    }
 `;
 
 const Center = styled.div`
@@ -56,24 +65,29 @@ const Center = styled.div`
 
 const Logo = styled.h2`
     font-weight:bold;
+    @media only screen and (max-width: 380px){
+        font-size: 24px;
+    }
 `;
 
 const Right = styled.div`
-    flex:1;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media only screen and (max-width: 380px){
+        flex: 2;
+        justify-content: center;
+    }
 `;
 
 const MenuItem = styled.div`
-    margin-left:10px;
-    display:flex;
-    align-items: center;
-    padding:8px;
-    border-radius:40px;
-    transition:.2s all;
-    &:hover{
-        background-color: #eee;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 25px;
+    @media only screen and (max-width: 380px){
+        font-size: 12px;
+        margin-left: 10px;
     }
 `;
 
@@ -85,7 +99,7 @@ const Navbar = () => {
                 <Left>
                     <Language>EN</Language>
                     <SearchContainer>
-                        <Input />
+                        <Input placeholder='Search'/>
                         <Search style={{color:"gray", fontSize:"16px"}}/>
                     </SearchContainer>
                 </Left>

@@ -11,7 +11,10 @@ import MailOutlined from '@mui/icons-material/MailOutlined';
 
 
 const Container = styled.div`
-  display: flex;
+    display: flex;
+    @media only screen and (max-width: 380px){
+        flex-direction: column;
+    }
 `;
 
 const Left = styled.div`
@@ -22,7 +25,7 @@ const Left = styled.div`
 `;
 
 const Logo = styled.h1`
-    font-size:35px;
+    font-size: 35px;
     font-weight: 700;
 `;
 
@@ -49,6 +52,9 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    @media only screen and (max-width: 380px){
+        display: none;
+    }
 `;
 
 const Title = styled.h3`
@@ -71,6 +77,9 @@ const ListItem = styled.li`
 const Right = styled.div`
     flex: 1;
     padding: 20px;
+    @media only screen and (max-width: 380px){
+        background-color: #fff8f8;
+    }
 `;
 
 const ContactItem = styled.div`
