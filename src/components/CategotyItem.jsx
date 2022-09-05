@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Navigate} from "react-router-dom";
 
 const Container = styled.div`
     position: relative;
@@ -46,11 +47,13 @@ const Button = styled.button`
 const CategotyItem = ({item}) => {
     return (
         <Container>
-            <Image src={item.img} />
-            <Info>
-                <Title>{item.title}</Title>
-                <Button>SHOP NOW</Button>
-            </Info>
+            <Navigate to={`/products/${item.cat}`}>
+                <Image src={item.img} />
+                <Info>
+                    <Title>{item.title}</Title>
+                    <Button>SHOP NOW</Button>
+                </Info>
+            </Navigate>
         </Container>
     )
 }

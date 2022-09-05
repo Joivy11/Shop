@@ -1,4 +1,5 @@
 import React from 'react';
+import {Navigate} from "react-router-dom";
 import styled from 'styled-components';
 import ShoppingCartOutlined from '@mui/icons-material/ShoppingCartOutlined';
 import SearchOutlined from '@mui/icons-material/SearchOutlined';
@@ -75,7 +76,9 @@ const Product = ({item}) => {
                     <ShoppingCartOutlined />
                 </Icon>
                 <Icon>
-                    <SearchOutlined />
+                    <Navigate to={`/product/${item._id}`}>
+                        <SearchOutlined />
+                    </Navigate>
                 </Icon>
                 <Icon>
                     <FavoriteBorderOutlined />
